@@ -1,0 +1,99 @@
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+dell@dell-Inspiron-13-5378:~$ sudo apy-get install git -y
+[sudo] пароль для dell: 
+sudo: apy-get: команда не найдена
+dell@dell-Inspiron-13-5378:~$ sudo apt-get install git -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Будут установлены следующие дополнительные пакеты:
+  git-man liberror-perl
+Предлагаемые пакеты:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-cvs git-mediawiki git-svn
+НОВЫЕ пакеты, которые будут установлены:
+  git git-man liberror-perl
+Обновлено 0 пакетов, установлено 3 новых пакетов, для удаления отмечено 0 пакетов, и 4 пакетов не обновлено.
+Необходимо скачать 4 731 kB архивов.
+После данной операции, объём занятого дискового пространства возрастёт на 33,9 MB.
+Пол:1 http://kz.archive.ubuntu.com/ubuntu bionic/main amd64 liberror-perl all 0.17025-1 [22,8 kB]
+Пол:2 http://kz.archive.ubuntu.com/ubuntu bionic-updates/main amd64 git-man all 1:2.17.1-1ubuntu0.1 [803 kB]
+Пол:3 http://kz.archive.ubuntu.com/ubuntu bionic-updates/main amd64 git amd64 1:2.17.1-1ubuntu0.1 [3 905 kB]
+Получено 4 731 kB за 3с (1 696 kB/s)       
+Выбор ранее не выбранного пакета liberror-perl.
+(Чтение базы данных … на данный момент установлено 163913 файлов и каталогов.)
+Подготовка к распаковке …/liberror-perl_0.17025-1_all.deb …
+Распаковывается liberror-perl (0.17025-1) …
+Выбор ранее не выбранного пакета git-man.
+Подготовка к распаковке …/git-man_1%3a2.17.1-1ubuntu0.1_all.deb …
+Распаковывается git-man (1:2.17.1-1ubuntu0.1) …
+Выбор ранее не выбранного пакета git.
+Подготовка к распаковке …/git_1%3a2.17.1-1ubuntu0.1_amd64.deb …
+Распаковывается git (1:2.17.1-1ubuntu0.1) …
+Настраивается пакет git-man (1:2.17.1-1ubuntu0.1) …
+Настраивается пакет liberror-perl (0.17025-1) …
+Обрабатываются триггеры для man-db (2.8.3-2) …
+Настраивается пакет git (1:2.17.1-1ubuntu0.1) …
+dell@dell-Inspiron-13-5378:~$ git --version
+git version 2.17.1
+dell@dell-Inspiron-13-5378:~$ git config --global user.name "tangsholpan"
+dell@dell-Inspiron-13-5378:~$ git config --global user.email "160104060@stu.sdu.edu.kz"
+dell@dell-Inspiron-13-5378:~$ git config --list
+user.name=tangsholpan
+user.email=160104060@stu.sdu.edu.kz
+dell@dell-Inspiron-13-5378:~$ pwd
+/home/dell
+dell@dell-Inspiron-13-5378:~$ ls -al
+итого 108
+drwxr-xr-x 17 dell dell 4096 сен 27 23:04  .
+drwxr-xr-x  3 root root 4096 сен 24 11:20  ..
+-rw-------  1 dell dell 2079 сен 27 22:33  .bash_history
+-rw-r--r--  1 dell dell  220 сен 24 11:20  .bash_logout
+-rw-r--r--  1 dell dell 3771 сен 24 11:20  .bashrc
+drwx------ 16 dell dell 4096 сен 27 20:56  .cache
+drwx------ 12 dell dell 4096 сен 27 20:56  .config
+-rw-r--r--  1 dell dell 8980 сен 24 11:20  examples.desktop
+-rw-r--r--  1 dell dell   61 сен 27 23:04  .gitconfig
+drwx------  3 dell dell 4096 сен 24 17:37  .gnupg
+-rw-------  1 dell dell 2256 сен 27 15:46  .ICEauthority
+drwx------  3 dell dell 4096 сен 24 17:27  .local
+drwx------  5 dell dell 4096 сен 25 18:22  .mozilla
+-rw-r--r--  1 dell dell  306 сен 24 17:36  .pam_environment
+-rw-r--r--  1 dell dell  807 сен 24 11:20  .profile
+drwx------  2 dell dell 4096 сен 27 14:43  .ssh
+-rw-r--r--  1 dell dell    0 сен 27 22:34  .sudo_as_admin_successful
+drwx------  4 dell dell 4096 сен 27 20:56  .thunderbird
+drwxr-xr-x  2 dell dell 4096 сен 24 17:27  Видео
+drwxr-xr-x  2 dell dell 4096 сен 24 17:27  Документы
+drwxr-xr-x  2 dell dell 4096 сен 27 19:47  Загрузки
+drwxr-xr-x  2 dell dell 4096 сен 24 17:27  Изображения
+drwxr-xr-x  2 dell dell 4096 сен 24 17:27  Музыка
+drwxr-xr-x  2 dell dell 4096 сен 24 17:27  Общедоступные
+drwxr-xr-x  2 dell dell 4096 сен 24 17:27 'Рабочий стол'
+drwxr-xr-x  2 dell dell 4096 сен 24 17:27  Шаблоны
+dell@dell-Inspiron-13-5378:~$ gedit .gitconfig
+dell@dell-Inspiron-13-5378:~$ mkdir git_workspace
+dell@dell-Inspiron-13-5378:~$ cd git_workspace/
+dell@dell-Inspiron-13-5378:~/git_workspace$ git clone https://github.com/tangsholpan/for-GIT.git
+Клонирование в «for-GIT»…
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Распаковка объектов: 100% (3/3), готово.
+dell@dell-Inspiron-13-5378:~/git_workspace$ ls
+for-GIT
+dell@dell-Inspiron-13-5378:~/git_workspace$ cd for-GIT/
+dell@dell-Inspiron-13-5378:~/git_workspace/for-GIT$ ls
+LICENSE
+dell@dell-Inspiron-13-5378:~/git_workspace/for-GIT$ touch ToLearnGit
+dell@dell-Inspiron-13-5378:~/git_workspace/for-GIT$ ls
+LICENSE  ToLearnGit
+dell@dell-Inspiron-13-5378:~/git_workspace/for-GIT$ touch StartUp
+dell@dell-Inspiron-13-5378:~/git_workspace/for-GIT$ ls
+LICENSE  StartUp  ToLearnGit
+dell@dell-Inspiron-13-5378:~/git_workspace/for-GIT$ gedit StartUp
+
+
